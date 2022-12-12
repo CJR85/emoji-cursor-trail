@@ -9,3 +9,11 @@ body {
   background: #111;
   overflow: hidden;
 }
+
+span {
+  position: absolute;
+  pointer-events: none;
+  width: 10px;
+  height: 10px;
+  background: #f00;
+}
