@@ -16,4 +16,26 @@ span {
   width: 10px;
   height: 10px;
   background: #f00;
+  animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    translate: 0 0;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  30% {
+    translate: 0 100px;
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: 0 80px;
+    opacity: 0;
+  }
 }
