@@ -13,9 +13,6 @@ body {
 span {
   position: absolute;
   pointer-events: none;
-  width: 10px;
-  height: 10px;
-  background: #f00;
   animation: animate 1s linear infinite;
 }
 
