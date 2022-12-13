@@ -25,6 +25,9 @@ document.addEventListener('mousemove', function (e) {
   let icon = images[Math.floor(Math.random() * images.length)];
   emoji.innerText = icon;
 
+  let size = Math.random() * 50;
+  emoji.style.fontSize = 5 + size + 'px';
+
   body.appendChild(emoji);
 
   setTimeout(function () {
