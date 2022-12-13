@@ -1,3 +1,18 @@
+let images = [
+  '😂',
+  '😊',
+  '😍',
+  '😜',
+  '😤',
+  '😩',
+  '😎',
+  '👍🏾',
+  '✊🏾',
+  '🏀',
+  '🏆',
+  '💻',
+];
+
 document.addEventListener('mousemove', function (e) {
   let body = document.querySelector('body'),
     emoji = document.createElement('span'),
@@ -6,6 +21,9 @@ document.addEventListener('mousemove', function (e) {
 
   emoji.style.left = x + 'px';
   emoji.style.top = y + 'px';
+
+  let icon = images[Math.floor(Math.random() * images.length)];
+  emoji.innerText = icon;
 
   body.appendChild(emoji);
 
